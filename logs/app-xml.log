@@ -1,0 +1,21 @@
+[INFO ] 25-06-2023 20:17:00 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:17:00 [main] LogUtils - This test case succeed: TC_01
+[INFO ] 25-06-2023 20:17:08 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:17:12 [main] LogUtils - This test case succeed: TC_02
+[INFO ] 25-06-2023 20:17:19 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:17:24 [main] LogUtils - This test case succeed: TC_03
+[INFO ] 25-06-2023 20:17:32 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:17:49 [main] LogUtils - This test case succeed: TC_04
+[INFO ] 25-06-2023 20:17:56 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[ERROR] 25-06-2023 20:18:25 [main] LogUtils - This test case failed: TC_05
+[INFO ] 25-06-2023 20:18:33 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:18:37 [main] LogUtils - This test case succeed: TC_06
+[INFO ] 25-06-2023 20:18:45 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:18:57 [main] LogUtils - This test case succeed: TC_07
+[INFO ] 25-06-2023 20:19:04 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:19:22 [main] LogUtils - This test case succeed: TC_08
+[INFO ] 25-06-2023 20:19:29 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:19:40 [main] LogUtils - This test case succeed: TC_09
+[INFO ] 25-06-2023 20:19:47 [main] LogUtils - Open URL: https://sma.tecdiary.net/admin/login
+[INFO ] 25-06-2023 20:20:03 [main] LogUtils - This test case succeed: TC_10
+[INFO ] 25-06-2023 20:20:06 [main] LogUtils - End testing Task4
