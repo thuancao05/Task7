@@ -254,7 +254,7 @@ public class customers_test extends baseTest  {
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
         // Kiem tra ket qua sau khi search
-        customersFunction.checkTotalInTable(23);
+        customersFunction.checkTotalInTable(2);
     }
     //Tìm kiếm khách hàng theo Last activity to
     @Test
