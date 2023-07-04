@@ -1,16 +1,87 @@
-[INFO] 04-07-2023 10:01:47 [main] [LogUtils] - Start auto test
-[INFO] 04-07-2023 10:01:52 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
-[INFO] 04-07-2023 10:02:01 [main] [LogUtils] - This test case succeed: TC_011
-[INFO] 04-07-2023 10:02:05 [main] [LogUtils] - End testing Task7
-[INFO] 04-07-2023 10:04:08 [main] [LogUtils] - Start auto test
-[INFO] 04-07-2023 10:04:11 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
-[INFO] 04-07-2023 10:04:20 [main] [LogUtils] - This test case succeed: TC_004
-[INFO] 04-07-2023 10:04:24 [main] [LogUtils] - End testing Task7
-[INFO] 04-07-2023 10:10:14 [main] [LogUtils] - Start auto test
-[INFO] 04-07-2023 10:10:17 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
-[INFO] 04-07-2023 10:10:26 [main] [LogUtils] - This test case succeed: TC_012
-[INFO] 04-07-2023 10:10:30 [main] [LogUtils] - End testing Task7
-[INFO] 04-07-2023 10:10:59 [main] [LogUtils] - Start auto test
-[INFO] 04-07-2023 10:11:02 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
-[INFO] 04-07-2023 10:11:11 [main] [LogUtils] - This test case succeed: TC_012
-[INFO] 04-07-2023 10:11:14 [main] [LogUtils] - End testing Task7
+[INFO] 04-07-2023 22:09:53 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 22:10:01 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:10:10 [main] [LogUtils] - This test case succeed: TC_001
+[INFO] 04-07-2023 22:10:19 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:10:27 [main] [LogUtils] - This test case succeed: TC_002
+[INFO] 04-07-2023 22:10:36 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:10:48 [main] [LogUtils] - This test case succeed: TC_003
+[INFO] 04-07-2023 22:10:58 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:11:07 [main] [LogUtils] - This test case succeed: TC_004
+[INFO] 04-07-2023 22:11:16 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:11:25 [main] [LogUtils] - This test case succeed: TC_005
+[INFO] 04-07-2023 22:11:33 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:11:43 [main] [LogUtils] - This test case succeed: TC_006
+[INFO] 04-07-2023 22:11:51 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[ERROR] 04-07-2023 22:11:59 [main] [LogUtils] - This test case failed: TC_007
+[INFO] 04-07-2023 22:12:08 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:12:16 [main] [LogUtils] - This test case succeed: TC_008
+[INFO] 04-07-2023 22:12:25 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[ERROR] 04-07-2023 22:12:33 [main] [LogUtils] - This test case failed: TC_009
+[INFO] 04-07-2023 22:12:42 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:12:50 [main] [LogUtils] - This test case succeed: TC_010
+[INFO] 04-07-2023 22:12:59 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:13:08 [main] [LogUtils] - This test case succeed: TC_011
+[INFO] 04-07-2023 22:13:17 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:13:25 [main] [LogUtils] - This test case succeed: TC_012
+[INFO] 04-07-2023 22:13:34 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:13:42 [main] [LogUtils] - This test case succeed: TC_013
+[INFO] 04-07-2023 22:13:51 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:13:59 [main] [LogUtils] - This test case succeed: TC_014
+[INFO] 04-07-2023 22:14:09 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:14:21 [main] [LogUtils] - This test case succeed: TC_015
+[INFO] 04-07-2023 22:14:31 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:14:38 [main] [LogUtils] - This test case succeed: TC_016
+[INFO] 04-07-2023 22:14:47 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:14:57 [main] [LogUtils] - This test case succeed: TC_017
+[INFO] 04-07-2023 22:15:06 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:15:14 [main] [LogUtils] - This test case succeed: TC_018
+[INFO] 04-07-2023 22:15:23 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:15:32 [main] [LogUtils] - This test case succeed: TC_019
+[INFO] 04-07-2023 22:15:41 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:15:51 [main] [LogUtils] - This test case succeed: TC_020
+[INFO] 04-07-2023 22:16:00 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:16:10 [main] [LogUtils] - This test case succeed: TC_021
+[INFO] 04-07-2023 22:16:19 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:16:43 [main] [LogUtils] - This test case succeed: TC_022
+[INFO] 04-07-2023 22:16:52 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:17:01 [main] [LogUtils] - This test case succeed: TC_023
+[INFO] 04-07-2023 22:17:09 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:17:18 [main] [LogUtils] - This test case succeed: TC_024
+[INFO] 04-07-2023 22:17:27 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:17:37 [main] [LogUtils] - This test case succeed: TC_025
+[INFO] 04-07-2023 22:17:46 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:17:56 [main] [LogUtils] - This test case succeed: TC_026
+[INFO] 04-07-2023 22:18:06 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:18:14 [main] [LogUtils] - This test case succeed: TC_027
+[INFO] 04-07-2023 22:18:23 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:18:31 [main] [LogUtils] - This test case succeed: TC_028
+[INFO] 04-07-2023 22:18:40 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:18:54 [main] [LogUtils] - This test case succeed: TC_029
+[INFO] 04-07-2023 22:19:04 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:19:18 [main] [LogUtils] - This test case succeed: TC_030
+[INFO] 04-07-2023 22:19:22 [main] [LogUtils] - End testing Run test
+[INFO] 04-07-2023 22:52:29 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 22:52:36 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:52:44 [main] [LogUtils] - This test case succeed: TC_007
+[INFO] 04-07-2023 22:52:48 [main] [LogUtils] - End testing Task7
+[INFO] 04-07-2023 22:53:08 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 22:53:14 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[INFO] 04-07-2023 22:53:23 [main] [LogUtils] - This test case succeed: TC_009
+[INFO] 04-07-2023 22:53:27 [main] [LogUtils] - End testing Task7
+[INFO] 04-07-2023 22:54:03 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 22:54:09 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[ERROR] 04-07-2023 22:54:18 [main] [LogUtils] - This test case failed: TC_009
+[INFO] 04-07-2023 22:54:22 [main] [LogUtils] - End testing Task7
+[INFO] 04-07-2023 22:56:36 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 22:56:42 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[ERROR] 04-07-2023 22:56:50 [main] [LogUtils] - This test case failed: TC_009
+[INFO] 04-07-2023 22:56:55 [main] [LogUtils] - End testing Task7
+[INFO] 04-07-2023 22:58:49 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 22:58:55 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[ERROR] 04-07-2023 22:59:03 [main] [LogUtils] - This test case failed: TC_009
+[INFO] 04-07-2023 22:59:07 [main] [LogUtils] - End testing Task7
+[INFO] 04-07-2023 23:00:12 [main] [LogUtils] - Start auto test
+[INFO] 04-07-2023 23:00:18 [main] [LogUtils] - Open URL: https://admin-demo.nopcommerce.com/login
+[ERROR] 04-07-2023 23:00:27 [main] [LogUtils] - This test case failed: TC_009
+[INFO] 04-07-2023 23:00:27 [main] [LogUtils] - Took picture test fail TC_009
+[INFO] 04-07-2023 23:00:31 [main] [LogUtils] - End testing Task7

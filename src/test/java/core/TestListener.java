@@ -38,6 +38,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         LogUtils.error("This test case failed: " + result.getName());
+        LogUtils.info("Took picture test fail " + result.getName());
         //Extent Report
         ExtentTestManager.addScreenShot(result.getName());
         ExtentTestManager.logMessage(Status.FAIL, result.getThrowable().toString());
