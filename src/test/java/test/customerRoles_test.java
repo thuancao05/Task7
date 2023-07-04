@@ -22,19 +22,27 @@ public class customerRoles_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //chuyen huong den trang dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomerRoles();
         commonFunction.sleep(1000);
+
+        //chuyen hướng den trang customer roles
         customersRolesFunction =  new customerRoles_function();
-        customersRolesFunction.clickBtnAddNew();
+        customersRolesFunction.clickBtnAddNew();                            // nhan nut add new customer role
+
+        // chuyen huong den trang add new customer role
         addNewCustomerRoleFunction = new addNewCustomerRole_function();
-        addNewCustomerRoleFunction.inputNameRole("New Role 1");
-        addNewCustomerRoleFunction.checkFreeShipping();
-        addNewCustomerRoleFunction.checkTaxExempt();
-        addNewCustomerRoleFunction.clickBtnSave();
+        addNewCustomerRoleFunction.inputNameRole("New Role 1");         // nhap name role
+        addNewCustomerRoleFunction.checkFreeShipping();                     // check Free shipping
+        addNewCustomerRoleFunction.checkTaxExempt();                        // check Tax exempt
+        addNewCustomerRoleFunction.clickBtnSave();                          // nhan nut save
+
+        // kiem tra sau khi add new
         customersRolesFunction =  new customerRoles_function();
         customersRolesFunction.checkNotification("The new customer role has been added successfully.");
     }
@@ -46,15 +54,21 @@ public class customerRoles_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //chuyen huong den trang dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomerRoles();
         commonFunction.sleep(1000);
+
+        //chuyen hướng den trang customer roles
         customersRolesFunction =  new customerRoles_function();
-        customersRolesFunction.selectShow("7");
-        customersRolesFunction.checkTotalInTable(7);
+        commonFunction.sleep(1000);
+        customersRolesFunction =  new customerRoles_function();
+        customersRolesFunction.selectShow("7");             // chon show 7
+        customersRolesFunction.checkTotalInTable(7);            // kiem tra bang ket quá sau khi show 7
     }
 
     //Kiểm tra chức năng edit role
@@ -64,17 +78,23 @@ public class customerRoles_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //chuyen huong den trang dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomerRoles();
         commonFunction.sleep(1000);
+
+        //chuyen hướng den trang customer roles
         customersRolesFunction =  new customerRoles_function();
-        customersRolesFunction.clickBtnEditByNameOfRole("Guests");
+        customersRolesFunction.clickBtnEditByNameOfRole("Guests");                    // nhan edit role Guests
         addNewCustomerRoleFunction = new addNewCustomerRole_function();
-        addNewCustomerRoleFunction.checkFreeShipping();
-        addNewCustomerRoleFunction.clickBtnSave();
+        addNewCustomerRoleFunction.checkFreeShipping();                             // check free shipping
+        addNewCustomerRoleFunction.clickBtnSave();                                  // click save
+
+        // kiem tra sau khi edit
         customersRolesFunction =  new customerRoles_function();
         customersRolesFunction.checkNotification("The customer role has been updated successfully.");
     }
@@ -85,14 +105,20 @@ public class customerRoles_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //chuyen huong den trang dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomerRoles();
         commonFunction.sleep(1000);
+
+        //chuyen hướng den trang customer roles
         customersRolesFunction =  new customerRoles_function();
-        customersRolesFunction.clickBtnReload();
+        commonFunction.sleep(1000);
+        customersRolesFunction =  new customerRoles_function();
+        customersRolesFunction.clickBtnReload();                // nhan nut reload va kiem tra bang co reload khong
     }
 
 
