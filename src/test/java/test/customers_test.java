@@ -21,21 +21,28 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
-        customersFunction.inputSearchEmail("admin@yourStore.com");
-        customersFunction.clickBtnSearch();
+        customersFunction.inputSearchEmail("admin@yourStore.com");              //Nhap email
+        customersFunction.clickBtnSearch();                                         //Nhan nut Search
         commonFunction.sleep(1000);
+
+        //Kiem tran thong tin ket qua sau khi search
         customersFunction.checkDataInTable("Name","John Smith");
         customersFunction.checkDataInTable("Email","admin@yourStore.com");
         customersFunction.checkDataInTable("Customer roles" , "Administrators, Forum Moderators, Registered");
         customersFunction.checkActive();
     }
+
     //Tìm kiếm khách hàng theo first name
     @Test
     public void TC_002() {
@@ -43,17 +50,25 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.inputSearchFirstName("John");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkDataInTable("Name","John Smith");
         customersFunction.checkDataInTable("Email","admin@yourStore.com");
+        customersFunction.checkDataInTable("Customer roles" , "Administrators, Forum Moderators, Registered");
+        customersFunction.checkActive();
     }
     //Tìm kiếm khách hàng theo last name
     @Test
@@ -62,17 +77,25 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.inputSearchLastName("Smith");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkDataInTable("Name","John Smith");
         customersFunction.checkDataInTable("Email","admin@yourStore.com");
+        customersFunction.checkDataInTable("Customer roles" , "Administrators, Forum Moderators, Registered");
+        customersFunction.checkActive();
     }
     //Tìm kiếm khách hàng theo date of birth
     @Test
@@ -81,18 +104,27 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchMonth("11");
         customersFunction.selectSearchDay("5");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkDataInTable("Name","Virat Kohli");
         customersFunction.checkDataInTable("Email","kiyjcycyhjc676008@gmail.com");
+        customersFunction.checkDataInTable("Customer roles" , "Registered");
+        customersFunction.checkDataInTable("Company name" , "Indian Cricket Team");
+        customersFunction.checkActive();
     }
 
     //Tìm kiếm khách hàng theo date ( motnh mac dinh)
@@ -102,17 +134,26 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchMonth("11");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkDataInTable("Name","Virat Kohli");
         customersFunction.checkDataInTable("Email","kiyjcycyhjc676008@gmail.com");
+        customersFunction.checkDataInTable("Customer roles" , "Registered");
+        customersFunction.checkDataInTable("Company name" , "Indian Cricket Team");
+        customersFunction.checkActive();
     }
     //Tìm kiếm khách hàng theo motnh ( date mac dinh)
     @Test
@@ -121,17 +162,26 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchDay("5");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkDataInTable("Name","Virat Kohli");
         customersFunction.checkDataInTable("Email","kiyjcycyhjc676008@gmail.com");
+        customersFunction.checkDataInTable("Customer roles" , "Registered");
+        customersFunction.checkDataInTable("Company name" , "Indian Cricket Team");
+        customersFunction.checkActive();
     }
     //Tìm kiếm khách hàng theo Registration date from
     @Test
@@ -140,16 +190,21 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchRegistrationDateFrom("7/1/2016");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
         customersFunction.checkTotalInTable(7);
     }
     //Tìm kiếm khách hàng theo Registration date to
@@ -159,16 +214,21 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchRegistrationDateTo("2/24/2023");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
         customersFunction.checkTotalInTable(7);
     }
 
@@ -179,16 +239,21 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchLastActivityFrom("7/13/2019");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
         customersFunction.checkTotalInTable(2);
     }
     //Tìm kiếm khách hàng theo Last activity to
@@ -198,16 +263,21 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.selectSearchLastActivityTo("3/5/2020");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
         customersFunction.checkTotalInTable(5);
     }
     //Tìm kiếm khách hàng theo company
@@ -217,17 +287,26 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
         customersFunction.inputSearchCompany("Indian Cricket Team");
         customersFunction.clickBtnSearch();
         commonFunction.sleep(1000);
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkDataInTable("Name","Virat Kohli");
         customersFunction.checkDataInTable("Email","kiyjcycyhjc676008@gmail.com");
+        customersFunction.checkDataInTable("Customer roles" , "Registered");
+        customersFunction.checkDataInTable("Company name" , "Indian Cricket Team");
+        customersFunction.checkActive();
     }
     //Tìm kiếm khách hàng theo ip address
     @Test
@@ -236,17 +315,22 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
-        customersFunction.inputSearchIPAddress("172.71.210.202");
-        customersFunction.clickBtnSearch();
+        customersFunction.inputSearchIPAddress("172.71.210.202");       // nhap ip can tim
+        customersFunction.clickBtnSearch();                                 // nhan search
         commonFunction.sleep(1000);
-        customersFunction.checkDataInTable("Email","steve_gates@nopCommerce.com");
+        //Kiem tra ket qua sau khi search
+        customersFunction.checkNoDataInTable();
     }
 
     //Tìm kiếm khách hàng theo 1 customer role
@@ -256,18 +340,23 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
-        customersFunction.clickCloseRegistered();
-        customersFunction.selectRoleVendors();
-        customersFunction.clickBtnSearch();
+        customersFunction.clickCloseRegistered();                       //tat role mac dinh
+        customersFunction.selectRoleAdministrators();               // chon role admin
+        customersFunction.clickBtnSearch();                             // nhan search
         commonFunction.sleep(1000);
-        customersFunction.checkDataInTable("Email","steve_gates@nopCommerce.com");
+        //Kiem tra ket qua sau khi search
+        customersFunction.checkRoleInTable("Customer roles", "Administrators");
     }
     //Tìm kiếm khách hàng theo nhieu customer role
     @Test
@@ -276,19 +365,26 @@ public class customers_test extends baseTest  {
         commonFunction = new common_function();
         loginFunction.Login();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Dashboard
         dashboardFunction = new dashboard_function();
         leftMenuFunction = dashboardFunction.verifyDasboardPage();
         leftMenuFunction.clickNavCustomers();
         commonFunction.sleep(1000);
         leftMenuFunction.clickBtnCustomers();
         commonFunction.sleep(1000);
+
+        //Chuyen huong den trang Customers
         customersFunction =  new customers_function();
-        customersFunction.clickCloseRegistered();
-        customersFunction.selectRoleVendors();
-        customersFunction.selectRoleForumModerators();
-        customersFunction.clickBtnSearch();
+        customersFunction.clickCloseRegistered();               //xoa role mac dinh
+        customersFunction.selectRoleVendors();                  //chon role Vendors
+        customersFunction.selectRoleForumModerators();          // chon role Forum Moderators
+        customersFunction.clickBtnSearch();                     //Nhan nut search
         commonFunction.sleep(1000);
-        customersFunction.checkTotalInTable(2);
+
+        // Kiem tra ket qua sau khi search
+        customersFunction.checkRoleInTable("Customer roles", "Registered");
+        customersFunction.checkRoleInTable("Customer roles", "Forum Moderators");
     }
 
 }

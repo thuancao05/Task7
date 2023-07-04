@@ -82,38 +82,55 @@ public class customers_function {
         commonFunction.clicks(customersPage.cbxSearchCustomerRoles);
         commonFunction.clicks(customersPage.btnVendorsRole);
     }
+    // chon role AdministratorsRole
+    public void selectRoleAdministrators(){
+        commonFunction.clicks(customersPage.cbxSearchCustomerRoles);
+        commonFunction.clicks(customersPage.btnAdministratorsRole);
+    }
 
+    //chon role Forum Moderators
     public void selectRoleForumModerators(){
         commonFunction.clicks(customersPage.cbxSearchCustomerRoles);
         commonFunction.clicks(customersPage.btnForumModeratorsRole);
 
     }
 
-    //ham kiem tra email dau tien trong bang
+    //kiem tra du lieu data theo cot
     public void checkDataInTable(String titleName, String data){
         commonFunction.checkDataInTable(titleName,data,customersPage.columnInTable, customersPage.rowInTable);
     }
-
-    //lay tong so dong trong bang
-    public int getTotalRowInTable(By by){
-        commonFunction.scrollToElement(by);
-        List<WebElement> elementList = DriverManager.getDriver().findElements(by);
-        int rowTotal = elementList.size();
-        System.out.println("Total Row : " + rowTotal);
-        return rowTotal;
-    }
-
+    //kiem tra  tong so hang trong bang
     public void checkTotalInTable(int total){
-        Assert.assertEquals(getTotalRowInTable(customersPage.rowInTable), total);
+        Assert.assertEquals(commonFunction.getTotalRowInTable(customersPage.rowInTable), total);
     }
 
+    //Kiem tra cot active
     public void checkActive(){
-        for(int i = 1; i<= getTotalRowInTable(customersPage.rowInTable) ; i++){
+        for(int i = 1; i<= commonFunction.getTotalRowInTable(customersPage.rowInTable) ; i++){
             WebElement element = DriverManager.getDriver().findElement(By.xpath("//tbody/tr["+i+"]/td[6]/i[1]"));
             String actual = commonFunction.getAttribute("nop-value", element);
             String expected = "true";
             Assert.assertEquals(actual,expected);
         }
+    };
+    //kiem tra role co ton tai trong table khong
+    public void checkRoleInTable(String titleName, String role){
+        for(int i = 1; i<= commonFunction.getTotalRowInTable(customersPage.rowInTable) ; i++){
+            WebElement element = DriverManager.getDriver().findElement(By.xpath("//tbody/tr["+i+"]/td[4]"));
+            String roles = element.getText();
+            String[] output = roles.split(", ");
+            for(int j = 0; j<= output.length; j++){
+                if(role.equals(output[j]))
+                    break;
+            }
+        }
+    }
+
+    //Kiem tra search khong tim thay
+    public void checkNoDataInTable(){
+        WebElement element = DriverManager.getDriver().findElement(customersPage.lblNoDataInTable);
+        commonFunction.scrollToElement(element);
+        Assert.assertEquals(commonFunction.getText(element), "No data available in table");
     }
 
 }

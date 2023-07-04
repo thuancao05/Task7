@@ -18,8 +18,10 @@ public class customers_page {
 
     public static By cbxSearchCustomerRoles = By.xpath("//body/div[3]/div[1]/form[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[5]/div[2]/div[1]/div[1]/input[1]");
     public static By btnVendorsRole = By.xpath("//li[contains(text(),'Vendors')]");
+    public static By btnAdministratorsRole = By.xpath("//li[contains(text(),'Administrators')]");
     public static By btnForumModeratorsRole = By.xpath("//li[contains(text(),'Forum Moderators')]");
     public static By rowInTable = By.xpath("//tbody/tr");
     public static By columnInTable = By.xpath("//table[1]/thead[1]/tr[1]/th");
+    public static By lblNoDataInTable = By.xpath("//td[contains(text(),'No data available in table')]");
     public static By btnCloseRegistered = By.xpath("//body/div[3]/div[1]/form[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[5]/div[2]/div[1]/div[1]/ul[1]/li[1]/span[2]");
 }
