@@ -30,6 +30,7 @@ public class vendors_function {
         commonFunction.clicks(vendorsPage.btnAddNewVendor);
     }
 
+    //kiem tra thong bao sau khi thuc hien thao tac
     public void checkNotification(String expected){
         WebElement element = DriverManager.getDriver().findElement(vendorsPage.lblMessage);
         String actual =  commonFunction.getText(element);
@@ -52,12 +53,15 @@ public class vendors_function {
         }
         return -1;
     }
+
+    // nhan vao nut edit vendor theo ten
     public void clickBtnEditByNameOfVendor(String name){
         int row = getRowByNameOfVendor(name);
         WebElement element = DriverManager.getDriver().findElement(By.xpath("//table/tbody/tr["+row+"]/td[4]"));
         element.click();
     }
 
+    // kiem tra du lieu trong bang theo ten cot
     public void checkDataInTable(String titleName, String data){
         commonFunction.checkDataInTable(titleName,data,vendorsPage.columnInTable, vendorsPage.rowInTable);
     }

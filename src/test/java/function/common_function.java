@@ -157,6 +157,7 @@ public class common_function {
         return str.substring(0,10);
     }
 
+    //lay tong so hang trong bang
     public int getTotalRowInTable(By by){
         scrollToElement(by);
         List<WebElement> elementList = DriverManager.getDriver().findElements(by);
@@ -164,6 +165,8 @@ public class common_function {
         System.out.println("Total Row : " + rowTotal);
         return rowTotal;
     }
+
+    // lau tong so cot trong bang
     public int getTotalColumnInTable(By by){
         scrollToElement(by);
         List<WebElement> elementList = DriverManager.getDriver().findElements(by);
@@ -184,6 +187,8 @@ public class common_function {
         }
         return -1;
     }
+
+    //kiem tra du lieu trong bang
     public boolean checkDataInTable(String titleColumn, String data, By columnInTable, By rowInTable) {
         int column = getColumnByTitle(titleColumn, columnInTable);
         int rowTotal = getTotalRowInTable(rowInTable);    //Tong so cot trong bang

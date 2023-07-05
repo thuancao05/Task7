@@ -16,10 +16,12 @@ public class customerRoles_function {
     common_function commonFunction = new common_function();
     customerRoles_page customerRolesPage = new customerRoles_page();
 
+    //nhan nut add new
     public void clickBtnAddNew(){
         commonFunction.clicks(customerRolesPage.btnAddNew);
     }
 
+    //kiem tra thong bao sau khi thuc hien thao tac
     public void checkNotification(String expected){
         WebElement element = DriverManager.getDriver().findElement(customerRolesPage.lblMessage);
         String actual =  commonFunction.getText(element);
@@ -29,6 +31,7 @@ public class customerRoles_function {
         Assert.assertEquals(actual, expected);
     }
 
+    //chon show theo cout
     public void selectShow(String count){
         WebElement cbxElement = DriverManager.getDriver().findElement(customerRolesPage.cbxShow);
         Select selectShowAll = new Select(cbxElement);
@@ -43,6 +46,7 @@ public class customerRoles_function {
         return rowTotal;
     }
 
+    //kiem tra so dong trong bang khong duoc vuot qua show da chon
     public void checkTotalInTable(int total){
         Assert.assertTrue( !(getTotalRowInTable(customerRolesPage.rowInTable) > total));
     }
@@ -61,12 +65,14 @@ public class customerRoles_function {
         return -1;
     }
 
+    //nhan nut edit role bang name
     public void clickBtnEditByNameOfRole(String name){
         int row = getRowByNameOfRole(name);
         WebElement element = DriverManager.getDriver().findElement(By.xpath("//table/tbody/tr["+row+"]/td[6]"));
         element.click();
     }
 
+    //nhan vao nut reload bang
     public void clickBtnReload(){
         commonFunction.clicks(customerRolesPage.btnReload);
         Assert.assertTrue(commonFunction.isDisplayed(customerRolesPage.lblAjaxBusy));

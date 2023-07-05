@@ -12,11 +12,12 @@ public class activityType_function {
     common_function commonFunction =  new common_function();
     activityType_page activityTypePage = new activityType_page();
 
-
+    // nhan nut save
     public void clickBtnSave(){
         commonFunction.clicks(activityTypePage.btnSave);
     }
 
+    //kiem tra thong bao sao khi thuc hien thao tac
     public void checkNotification(String expected){
         WebElement element = DriverManager.getDriver().findElement(activityTypePage.lblMessage);
         String actual =  commonFunction.getText(element);
@@ -25,6 +26,8 @@ public class activityType_function {
         System.out.println(expected);
         Assert.assertEquals(actual, expected);
     }
+
+    //lay tong so cot trong bang
     public int getTotalRowInTable(By by){
         commonFunction.scrollToElement(by);
         List<WebElement> elementList = DriverManager.getDriver().findElements(by);
@@ -45,6 +48,8 @@ public class activityType_function {
         }
         return -1;
     }
+
+    //dung check theo then type
     public void clickCheckEnableByNameOfType(String name){
         int row = getRowByName(name);
         if(commonFunction.isChecked(By.xpath("//table/tbody/tr["+row+"]/td[2]/input[1]")))
@@ -52,6 +57,8 @@ public class activityType_function {
         WebElement element = DriverManager.getDriver().findElement(By.xpath("//table/tbody/tr["+row+"]/td[2]/input[1]"));
         element.click();
     }
+
+    //dung bo check theo then type
     public void clickUnCheckEnableByNameOfType(String name){
         int row = getRowByName(name);
         if(!commonFunction.isChecked(By.xpath("//table/tbody/tr["+row+"]/td[2]/input[1]")))
