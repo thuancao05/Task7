@@ -1,8 +1,14 @@
 package function;
 
 import driver.DriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import page.addNewVendor_page;
+
+import javax.swing.*;
+
+import static driver.DriverManager.getDriver;
 
 public class addNewVendor_function {
     common_function commonFunction = new common_function();
@@ -20,9 +26,12 @@ public class addNewVendor_function {
 
     // nhap description vendor
     public void inputDescriptionVendor(String str){
-//        commonFunction.sendKeys(addNewVendorPage.areaDescription, str);
-        WebElement element = DriverManager.getDriver().findElement(addNewVendorPage.areaDescription);
+        DriverManager.getDriver().switchTo().frame("Description_ifr");              //chuyen sang frame con
+        WebElement element = DriverManager.getDriver().findElement(addNewVendorPage.descripttionInOtherFrame);
+        element.clear();
         element.sendKeys(str);
+
+        DriverManager.getDriver().switchTo().parentFrame();     // tro ve frame cha
     }
 
     //nhan nut save

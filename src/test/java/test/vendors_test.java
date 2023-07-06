@@ -118,7 +118,7 @@ public class vendors_test extends baseTest {
         vendorsFunction = new vendors_function();
         vendorsFunction.clickBtnEditByNameOfVendor("Vendor 1");     // nhan edit Vendor 1
         addNewVendorFunction =  new addNewVendor_function();
-        commonFunction.sleep(10000);
+        commonFunction.sleep(3000);
 
         addNewVendorFunction.inputNameVendor("New Vendor 1");   // sua ten vendor
         addNewVendorFunction.inputDescriptionVendor("Best Vendor"); //them description vendor
